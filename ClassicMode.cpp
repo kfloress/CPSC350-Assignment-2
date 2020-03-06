@@ -9,14 +9,14 @@ ClassicMode:: ~ClassicMode(){
 
 }
 
-
 int ClassicMode:: numNeighbors(int array, int length, int width, int density){
   for (int i = 0; i < width; ++i){
     for (int j = 0; j < length; ++j){
       int r = i;
       int c = j;
 
-      numNeighbors = array[r-1][c-1]+ array[r-1][c]+ array[r-1][c+1]+ array[r][c+1]+array[r+1][c-1]+ array[r+1][c]+ array[r+1][c-1]+ array[r][c-1];
+    //  int numNeighbors = array[r-1][c-1] + array[r-1][c] + array[r-1][c+1] + array[r][c+1] +array[r+1][c-1] + array[r+1][c]
+      //+ array[r+1][c-1]+ array[r][c-1];
     }
   }
   return numNeighbors;
@@ -46,9 +46,8 @@ void ClassicMode:: cellGenerator(int array, int newGenArray, int numNeighbors){
         else if (array[i][j] == 0) // if empty remains empty
           newGenArray = 0;
 
+        //calculate stable count
       }
     }
-
-
   }
 }
