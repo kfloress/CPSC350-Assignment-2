@@ -13,6 +13,4 @@ class Board{
     int density;
     //do I need array here?
 
-
-
 };

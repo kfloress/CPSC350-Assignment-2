@@ -11,7 +11,7 @@ ClassicMode:: ~ClassicMode(){
 }
 
 int ClassicMode:: numNeighbors(){
-  int array[10][12];
+  int array[10][12];  //use height (num rows) and  width (num columns)
   int numNeighbors;
 
 
