@@ -2,12 +2,12 @@
 #include <iostream>
 using namespace std;
 
-ClassicMode:: ClassicMode(){
+ClassicMode:: ClassicMode(/* pass in a board*/){
 
 }
 //overloaded constructor here
-ClassicMode:: ~ClassicMode(){
-
+ClassicMode:: ~ClassicMode(/* pass in board from main*/){
+  //array = board;
 }
 
 int ClassicMode:: numNeighbors(){

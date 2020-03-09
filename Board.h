@@ -5,7 +5,7 @@ class Board{
   public:
     Board();
     ~Board();
-    void boardGenerator();
+    int boardGenerator();
 
 
     int rows;

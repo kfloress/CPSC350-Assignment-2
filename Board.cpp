@@ -10,7 +10,7 @@ Board:: ~Board(){
 
 }
 
-void Board::boardGenerator(){ /*pass in height, width and density*/
+int Board::boardGenerator(){ /*pass in height, width and density*/
 
   //initialize height and width and density TEMPORARILY
   const int HEIGHT = 10;
@@ -42,5 +42,5 @@ void Board::boardGenerator(){ /*pass in height, width and density*/
        }
      }
    }
-
+   return board;
 }
